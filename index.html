@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>慕课网</title>
+        <style type="text/css">
+        
+*{margin:0;
+  padding:0;
+  font-size:12px;
+}
+body{
+	background-color:#F5F5F5;
+}
+.top{
+	width:100%;
+	height:27px;
+	background:url(../images/top_bg.jpg) repeat-x 
+}
+.top_content{
+	width:1000px;
+	margin:0 auto;
+}
+.top_content li{
+	list-style-image:url(../images/li_bg.gif);
+	float:right;
+	width:70px;
+	line-height:27px;
+}
+.top_content a:link,.top_content a:visited{
+	color:#8E8E8E;
+	text-decoration:none;
+}
+.top_content a:active,.top_content a:hover{
+	color:#900;
+	text-decoration:none;
+}
+.wrap{
+	width:1000px;
+	margin:0 auto;
+}
+.logo{
+	height:80px;
+	background-color:#FFF;
+}
+.logo_left{
+	width:200px;
+	float:left;
+}
+.logo_right{
+	width:300px;
+	float:right;
+	height:28px;
+	margin-top:26px;
+	color:#8E8E8E;
+}
+.logo_right img{
+	vertical-align:middle;
+	margin-right:10px;
+}
+.tel{
+	font-family:"微软雅黑", "宋体";
+	font-size:16px;
+	color:#C00;
+}
+.nav{
+	height:40px;
+}
+.nav_left{
+	width:10px;
+	background:url(../images/nav_left.jpg) no-repeat;
+}
+.nav_mid{
+	width:980px;
+	background:url(../images/nav_bg.jpg) repeat-x;
+    background-color: dimgray;
+}
+.nav_right{
+    width: 1px;
+	background:url(../images/nav_right.jpg) no-repeat;
+}
+.nav_left,.nav_mid,.nav_right{
+	float:left;
+	height:40px;
+}
+.nav_mid_left,.nav_mid_right{
+	float:Left;
+}
+.nav_mid_left{
+	width:680px;
+}
+.nav_mid_right{
+	width:300px;
+}
+.nav_mid_left li{
+	float:left;
+	list-style-type:none;
+	width:100px;
+	text-align:center;
+	line-height:40px;
+}
+.nav_mid_left a:link,.nav_mid_left a:visited{
+	text-decoration:none;
+	color:#fff;
+	font-size:16px;
+	font-family:"微软雅黑", "宋体";
+}
+.nav_mid_left a:hover,.nav_mid_left a:active{
+	color:#FF0;
+	text-decoration:none;
+	font-size:16px;
+	font-family:"微软雅黑", "宋体";
+}
+.search_text{
+	width:190px;
+	height:25px;
+	margin-top:5px;
+	background:url(../images/search.jpg) no-repeat right center;
+	background-color:#FFF;
+	padding-right:25px;
+	border:1px solid #FFF;
+}
+@keyframes qh { 
+                0%,
+                25% {
+                    margin-left: 0px;
+                }
+                30%,
+                50% {
+                    margin-left: -1200px;
+                }
+                55%,
+                75% {
+                    margin-left: -2400px;
+                }
+                80%,
+                100% {
+                    margin-left: -3600px;
+                }
+            } 
+.ad{
+	height:240px;
+    width: 1000px;
+    border-radius: 30px;
+	overflow:hidden;
+} 
+            .ad .kuai {
+                display: block;
+                width: 5000px;
+                height: 240px;
+                animation: qh 8s linear infinite;
+            } 
+            .ad li {
+                float: left;
+                width: 1200px;
+                height: 300px;
+            }
+            .ad img {
+                width: 1200px;
+                height: 100%;
+            }
+            
+.main{
+	height:250px;
+	background:#FFF;
+	margin-top:5px;
+}
+.news{
+	width:340px;
+	border:1px solid #E8E8E8;
+	
+}
+.course{
+	width:410px;
+	border:1px solid #E8E8E8;
+	margin:0 7px;
+}
+.sidebar{
+	width:230px;
+	
+}
+.news,.course,.sidebar{
+	height:250px;
+	float:left;
+}
+.title{
+	height:35px;
+	border-bottom:2px solid #E8E8E8;
+}
+.title_left{
+	width:70%;
+	font-family:"微软雅黑", "宋体";
+	font-size:14px;
+	font-weight:bold;
+	color:#786F66;
+	float:left;
+	line-height:35px;
+	padding-left:20px;
+}
+.title_right{
+	width:20%;
+	float:right;
+	line-height:35px;
+	text-align:right;
+	padding-right:10px;
+}
+.pic_news{
+	height:80px;
+	margin-top:10px;
+	line-height:22px;
+}
+.pic_news img,.course_pic img{
+	float:left;
+	margin:0 5px;
+}
+.pic_news a,.course_pic a{
+	color:#C00;
+	text-decoration:none;
+}
+.news_list{
+	margin-top:20px;
+}
+.news_list li{
+	list-style-image:url(../images/list.jpg);
+	margin:2px;
+	border-bottom:1px dotted #CCC;
+}
+.news_list a:link,.news_list a:visited{
+	text-decoration:none;
+	color:#000;
+}
+.news_list a:hover,.news_list a:active{
+	color:#F00;
+}
+.date{
+	float:right;
+}
+ 
+.course_pic{
+	height:120px;
+	line-height:22px;
+	margin-top:10px;
+}
+.course_type{
+	height:37px;
+	width:372px;
+	background:url(../images/product_type_bg.jpg) no-repeat;
+	margin:20px auto;
+}
+.course_type li{
+	list-style-type:none;
+	float:left;
+	line-height:37px;
+	margin:0 15px;
+	text-align:center;
+}
+.v{
+	height:185px;
+	border:1px solid #E8E8E8;
+}
+.v_content{
+	height:150px;
+}
+.sidebra_ad{
+	height:55px;
+	border:1px solid #E8E8E8;
+	margin-top:10px;
+}
+.copyright{
+	width:100%;
+	height:200px;
+	background:#E8E8E8;
+	margin-top:10px;
+}
+.copyright_content{
+	width:1000px;
+	margin:0 auto;
+	padding-top:20px;
+}
+.copyright_content li{
+	list-style-type:none;
+	float:left;
+	width:200px;
+	background:url(../images/line.png) no-repeat right center;
+	text-align:center;
+	line-height:30px;
+	font-family:"微软雅黑", "宋体";
+}
+.copyright_content a{
+	text-decoration:none;
+	color:#999;
+	font-size:18px;
+}
+.copyright_content ul ul a{
+	font-size:14px;
+}
+</style>
+<body>
+	<div class="top">
+		<div class="top_content">
+			<ul>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">加入收藏</a></li>
+				<li><a href="#">设为首页</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	<div class="wrap">
+	
+		<div class="logo">
+			<div class="logo_left">
+			<img src="images/logo.jpg" alt="慕课网"/>
+		</div>
+		<div class="logo_right">
+			<img src="images/tel.jpg" alt="服务热线"/><span class="tel">24小时服务热线：123-456-7890</span>
+		</div>
+		</div>
+		
+		<div class="nav">
+			<div class="nav_left">
+			
+			</div>
+			<div class="nav_mid">
+				<div class="nav_mid_left">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">关于慕课</a></li>
+						<li><a href="#">新闻动态</a></li>
+						<li><a href="#">课程中心</a></li>
+						<li><a href="#">在线课程</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="nav_mid_right">
+					<form  action="" method="post">
+						<input class="search_text" type="text"/>
+					</form>
+				</div>
+			</div>
+			<div class="nav_right">
+			<img src="images/search.jpg">
+			</div>
+		</div>
+		<div class="ad">
+			<lu class="kuai">
+				<li><img src="images/ad.jpg"/></li>
+                <li><img src="images/ad2.jpg"/></li>
+                <li><img src="images/ad3.jpg"/></li>
+                <li><img src="images/ad4.jpg"/></li>
+			</ul>
+		</div>
+		
+		<div class="main">
+		
+			<div class="news">
+				<div class="title">
+					<h2 class="title_left">新闻中心</h2><span class="title_right"><a href="#">More>></a></span>
+				</div>
+				<div class="pic_news">
+					<img src="images/news.jpg"/><a href="#"><h2>520慕女神喊你来表白！</h2></a><p>活动时间：5月20日-5月25日<br/>获奖公布时间：5月26日<br/><a href="#">Learn More>></a></p>
+				</div>
+				<div class="news_list">
+					 <li><span class="date">2014-06-01</span> <a href="#">【慕客访谈 用户篇】“有为屌丝”在路上</a></li>
+          			<li><span class="date">2014-06-01</span><a href="#">【有奖活动】给父亲的三行书信</a></li>
+         			 <li><span class="date">2014-05-30</span><a href="#">《程序猿，请晒出你的童年》活动获奖公告</a></li>
+          			<li><span class="date">2014-05-28</span><a href="#" title="aa">【慕课访谈】破茧成蝶——美女程序员的蜕变史</a></li>
+        </ul>
+				</div>
+			</div>
+			
+			<div class="course">
+				<div class="title">
+					<h2 class="title_left">课程中心</h2><span class="title_right"><a href="#">More>></a></span>
+				</div>
+				<div class="course_pic">
+					<img src="images/css.jpg"/><a href="#"><h2>CSS圆角进化论</h2></a><p>CSS圆角的实现，经历了三大发展阶段：背景图片方式、CSS2.0+HTML标签模拟、CSS3.0圆角属性）。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析。</p>
+				</div>
+				<div class="course_type">
+					<ul>
+						<li>PHP开发</li>
+						 <li>前端开发</li>
+						 <li>JAVA开发</li>
+						 <li>Android开发</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="sidebar">
+			  	<div class="v">
+					<div class="title"><h2 class="title_left">媒体聚集</h2></div>
+					<div class="v_content">
+					          <img src="images/loading.gif">
+ 
+					</div>
+				</div>
+				<div class="sidebar_ad">
+					<img src="images/app.jpg"/>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div class="copyright">
+		<div class="copyright_content">
+			<ul>
+				<li><a href="#">关于</a>
+					<ul>
+						  <li><a href="#">品牌故事</a></li>
+						  <li><a href="#">联系我们</a></li>
+						  <li><a href="#">加入我们</a></li>
+						  <li><a href="#">版权声明</a></li>
+					</ul>
+				</li>
+				<li><a href="#">课程</a>
+					 <ul>
+						 <li><a href="#">PHP开发</a></li>
+						  <li><a href="#">前端开发</a></li>
+						  <li><a href="#">JAVA开发</a></li>
+						  <li><a href="#">Android开发</a></li>
+        			</ul>
+				</li>
+				<li><a href="#">留言</a>
+					<ul>
+						<li><a href="#">意见反馈</a></li>
+						  <li><a href="#">问题留言</a></li>
+						  <li><a href="#">媒体联络</a></li>
+						  <li><a href="#">在线客服</a></li>
+					</ul>
+				</li>
+				<li><a href="#">关注</a>
+					<ul>
+						<li><a href="#">新浪微博</a></li>
+						  <li><a href="#">腾讯微博</a></li>
+						  <li><a href="#">企业微博</a></li>
+						  <li><a href="#">QQ空间</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><img src="images/weixin.png"/>微信关注</a>
+					<ul>
+						<li><img src="images/qrcode.jpg"/></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
+
